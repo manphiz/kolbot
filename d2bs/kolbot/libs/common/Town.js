@@ -1264,7 +1264,7 @@ const Town = {
 	},
 
 	needKeys: function () {
-		return this.checkKeys() <= 0;
+		return this.checkKeys() <= 1;
 	},
 
 	wantKeys: function () {

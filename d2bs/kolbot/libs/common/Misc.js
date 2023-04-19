@@ -1086,7 +1086,7 @@ const Misc = {
 		// Skip invalid/open and Countess chests
 		if (!unit || unit.x === 12526 || unit.x === 12565 || unit.mode) return false;
 		// locked chest, no keys
-		if (!me.assassin && unit.islocked && !me.findItem(sdk.items.Key, sdk.items.mode.inStorage, sdk.storage.Inventory)) return false;
+		if (!me.assassin && unit.islocked && Town.needKeys()) return false;
 
 		let specialChest = sdk.quest.chests.includes(unit.classid);
 
